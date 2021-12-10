@@ -1,0 +1,8 @@
+{
+  "fixturesFolder": false,
+  "componentFolder": "src",
+  "baseUrl": "http://localhost:3000",
+  "testFiles": "**/*spec.*",
+  "video": false,
+  "viewportHeight": 800
+}

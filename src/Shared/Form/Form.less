@@ -1,0 +1,21 @@
+.form {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 150px;
+  font-family: sans-serif;
+  background: @color--white;
+
+  &__button {
+    border: none;
+    padding: 12px 22px;
+    font-size: 18px;
+    background-color: @color--blue;
+    color: @color--white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken(@color--blue, 20);
+      transition: all 0.2s ease;
+    }
+  }
+}

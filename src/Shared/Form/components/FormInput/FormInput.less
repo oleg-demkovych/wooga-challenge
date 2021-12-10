@@ -1,0 +1,52 @@
+.form__input {
+  position: relative;
+  margin-bottom: 15px;
+
+  input {
+    display: block;
+    width: 400px;
+    height: 50px;
+    background: transparent;
+    border: solid 1px @color--grey;
+    transition: all 0.3s ease;
+    padding: 0 20px;
+    outline: none;
+    font-size: 16px;
+
+    &:focus {
+      border-color: @color--blue;
+
+      + label {
+        font-size: 13px;
+        top: -5px;
+        color: @color--blue;
+      }
+    }
+  }
+
+  label {
+    position: absolute;
+    cursor: text;
+    z-index: 2;
+    top: 18px;
+    left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    background: @color--white;
+    padding: 0 10px;
+    color: @color--grey--light;
+    transition: all 0.2s ease;
+  }
+
+  &--has-value {
+    input {
+      border-color: @color--blue;
+    }
+
+    label {
+      font-size: 13px;
+      top: -5px;
+      color: @color--blue;
+    }
+  }
+}

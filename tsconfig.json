@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "paths": {
+      "*": ["src/*"],
+      "Components/*": ["src/Components/*"],
+      "Utils/*": ["src/Utils/*"],
+      "Models/*": ["src/Models/*"],
+      "Tests/*": ["src/Tests/*"],
+      "Hooks/*": ["src/Hooks/*"]
+    },
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "target": "es6",
+    "skipLibCheck": true,
+    "outDir": "build",
+    "typeRoots": ["./node_modules/@types", "./src/@types"],
+    "types": ["node"]
+  },
+  "exclude": ["node_modules", "build"],
+  "include": ["./src", ".eslintrc", "setupTests.ts"]
+}

@@ -1,0 +1,25 @@
+{
+  "presets": [
+    [
+      "react-app",
+      {
+        "runtime": "automatic"
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "Components": ["./src/Components"],
+          "Utils": ["./src/Utils"],
+          "Models": ["./src/Models"],
+          "Tests": ["./src/Tests"],
+          "Hooks": ["./src/Hooks"]
+        }
+      }
+    ]
+  ]
+}
